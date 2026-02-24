@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="logo.png">
+    <title>Dinnov-IT - Cloud & Management de Projets</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-900 text-white font-sans"> <!-- Navbar -->
+    <nav class="flex justify-between items-center p-6 bg-gray-800">
+        <div class="flex items-center space-x-2">
+            <img src="logo.png" alt="Logo" class="h-10 w-10">
+            <span class="text-xl font-bold">DInnoV-IT</span>
+        </div>
+        <ul class="flex gap-6">
+            <li><a href="#about" class="hover:text-teal-400">À propos</a></li>
+            <li><a href="#services" class="hover:text-teal-400">Services</a></li>
+            <li><a href="#projects" class="hover:text-teal-400">Projets</a></li>
+            <li><a href="#contact" class="hover:text-teal-400">Contact</a></li>
+        </ul>
+    </nav> <!-- Hero Section -->
+    <section
+        class="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-r from-teal-500 to-blue-500">
+        <h1 class="text-5xl font-bold mb-4">DInnoV-IT</h1>
+        <p class="text-xl mb-6">Architecture Cloud, DevOps, Sécurité & Management de projets pour les entreprises
+            innovantes</p>
+        <div class="flex gap-4"> <a href="#contact"
+                class="px-6 py-3 bg-gray-900 text-white rounded hover:bg-gray-700">Travaillons ensemble</a> <a
+                href="CV_Vincent_Brasseur.pdf" download
+                class="px-6 py-3 bg-teal-500 text-white rounded hover:bg-teal-400">Télécharger mon CV</a> </div>
+    </section> <!-- About Section -->
+    <section id="about" class="py-20 px-6 bg-gray-900">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6">À propos de Vincent Brasseur</h2>
+            <p class="mb-4"> Fort d'une expérience chez L'Oréal et Accor, je me spécialise dans l'architecture Cloud et
+                DevOps, couvrant AWS, Azure, Kubernetes, Terraform, CI/CD et la sécurité des infrastructures. </p>
+            <p class="mb-4"> J’ai également dirigé des projets complexes, coordonné des équipes techniques et assuré la
+                livraison de solutions Cloud sécurisées et automatisées. Mon expertise inclut la planification, la
+                gestion des risques, le suivi des indicateurs de performance et l'accompagnement des équipes dans les
+                bonnes pratiques DevOps. </p>
+            <p> Je fonde DInnoV-IT pour accompagner les entreprises dans la transformation numérique, l'automatisation
+                des workflows et l'optimisation de leur infrastructure Cloud. </p>
+            <p class="mt-6"> <a href="CV_Vincent_Brasseur.pdf" download
+                    class="px-6 py-3 bg-teal-500 text-white rounded hover:bg-teal-400">Télécharger mon CV</a> </p>
+        </div>
+    </section> <!-- Services Section -->
+    <section id="services" class="py-20 px-6 bg-gray-800">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12">Services</h2>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="p-6 bg-gray-700 rounded hover:bg-gray-600 transition">
+                    <h3 class="text-2xl font-semibold mb-2">Cloud Architecture</h3>
+                    <p>Conception et déploiement d’infrastructures AWS, Azure et multi-cloud.</p>
+                </div>
+                <div class="p-6 bg-gray-700 rounded hover:bg-gray-600 transition">
+                    <h3 class="text-2xl font-semibold mb-2">DevOps & CI/CD</h3>
+                    <p>Automatisation des pipelines CI/CD, gestion des containers et GitOps avec Kubernetes.</p>
+                </div>
+                <div class="p-6 bg-gray-700 rounded hover:bg-gray-600 transition">
+                    <h3 class="text-2xl font-semibold mb-2">Sécurité & Observabilité</h3>
+                    <p>Monitoring Prometheus, micro-segmentation, sécurité Cloud et audit des infrastructures.</p>
+                </div>
+            </div>
+        </div>
+    </section> <!-- Projects Section -->
+    <section id="projects" class="py-20 px-6 bg-gray-900">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12">Projets récents</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="p-6 bg-gray-800 rounded hover:bg-gray-700 transition">
+                    <h3 class="text-xl font-semibold mb-2">Cluster K3s & Jenkins</h3>
+                    <p>Déploiement de microservices avec GitOps et CI/CD sur un cluster K3s local.</p>
+                </div>
+                <div class="p-6 bg-gray-800 rounded hover:bg-gray-700 transition">
+                    <h3 class="text-xl font-semibold mb-2">EKS & ArgoCD</h3>
+                    <p>Mise en place d’un cluster Kubernetes managé AWS avec déploiement GitOps sécurisé.</p>
+                </div>
+                <div class="p-6 bg-gray-800 rounded hover:bg-gray-700 transition">
+                    <h3 class="text-xl font-semibold mb-2">Terraform & Infrastructure</h3>
+                    <p>Automatisation complète des environnements Cloud pour des projets multi-tenant.</p>
+                </div>
+                <div class="p-6 bg-gray-800 rounded hover:bg-gray-700 transition">
+                    <h3 class="text-xl font-semibold mb-2">Monitoring & SNMP</h3>
+                    <p>Configuration Prometheus pour la collecte de métriques SNMP de NAS et Proxmox.</p>
+                </div>
+                <div class="p-6 bg-gray-800 rounded hover:bg-gray-700 transition">
+                    <h3 class="text-xl font-semibold mb-2">Vaultwarden & Traefik</h3>
+                    <p>Sécurisation des mots de passe et déploiement d’Ingress Traefik multi-namespace.</p>
+                </div>
+            </div>
+        </div>
+    </section> <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 bg-gray-800">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6">Contact</h2>
+            <p class="mb-6">Vous souhaitez collaborer ou discuter d’un projet ? Envoyez-moi un message :</p>
+            <form id="contact-form" class="flex flex-col gap-4">
+                <input type="text" name="name" placeholder="Nom" class="p-3 rounded text-black" required>
+                <input type="email" name="email" placeholder="Email" class="p-3 rounded text-black" required>
+                <textarea name="message" rows="5" placeholder="Message" class="p-3 rounded text-black"
+                    required></textarea>
+                <button type="submit"
+                    class="px-6 py-3 bg-teal-500 text-white rounded hover:bg-teal-400">Envoyer</button>
+            </form>
+            <p id="form-status" class="mt-4 text-center text-white"></p>
+            <p id="form-message" class="mt-4 text-teal-400 font-semibold"></p>
+            <p class="mt-6">Ou contactez-moi directement : <a href="mailto:vincent.brasseur@dinnov-it.com"
+                    class="text-teal-400">vincent.brasseur@dinnov-it.com</a></p>
+            <p class="mt-2">LinkedIn : <a href="https://www.linkedin.com/in/vincent-brasseur-21557b6/"
+                    class="text-teal-400">linkedin.com/in/vincent-brasseur</a></p>
+        </div>
+    </section> <!-- Footer -->
+    <footer class="py-6 bg-gray-900 text-center text-gray-500"> &copy; 2025 DInnoV-IT. Tous droits réservés. </footer>
+
+<!-- Script pour le formulaire -->
+    <script>
+        const form = document.getElementById("contact-form");
+        const status = document.getElementById("form-status");
+        const API_TOKEN = "EyHGW$VPJCLPPM$^7AhkR&Uu57zz58ud"; // à remplacer par le token réel
+        const BACKEND_URL = "https://flask.dinnov-it.com/send-mail"; // URL interne K3s
+
+        form.addEventListener("submit", async (e) => {
+            e.preventDefault();
+            status.textContent = "Envoi en cours...";
+
+            const data = {
+                name: form.name.value,
+                email: form.email.value,
+                message: form.message.value
+            };
+
+            try {
+                const response = await fetch(BACKEND_URL, {
+                    method: "POST",
+                    headers: { 
+                        "Content-Type": "application/json",
+                        "Authorization": `Bearer ${API_TOKEN}`
+                     },
+                    body: JSON.stringify(data)
+                });
+
+                const result = await response.json();
+                if (result.status === "Email sent") {
+                    status.textContent = "✅ Email envoyé avec succès !";
+                    form.reset();
+                } else {
+                    console.error("Erreur complète :", result);
+                    status.textContent = "❌ Erreur : " + result.message;
+                }
+            } catch (err) {
+                console.error("Erreur complète :", err);
+                status.textContent = "❌ Erreur de connexion au serveur.";
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>
