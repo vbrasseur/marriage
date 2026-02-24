@@ -1,5 +1,5 @@
-import { motion } from "motion/react";
-import imgRectangle3 from "../../assets/5eff9b45ac08cb1eb0a3dadae087d37f4d1f186d.png";
+import { motion } from "framer-motion";
+import notreMariage from "../../assets/notre-mariage.png"; // Remplacez par le chemin de votre illustration
 
 export function Hero() {
   const scrollToContact = () => {
@@ -13,46 +13,46 @@ export function Hero() {
     <section className="relative w-full h-screen min-h-[700px] flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-[#d9d9d9] mix-blend-multiply" />
-        <img 
-          alt="Background" 
-          className="w-full h-full object-cover" 
-          src={imgRectangle3} 
+        <div className="absolute inset-0 bg-[#f5e6d3] mix-blend-multiply" /> {/* Couleur douce pour le mariage */}
+        <img
+          alt="Notre Mariage"
+          className="w-full h-full object-cover"
+          src={notreMariage}
         />
-        {/* Overlay for better text readability */}
-        <div className="absolute inset-0 bg-black/40" />
+        {/* Overlay pour une meilleure lisibilité du texte */}
+        <div className="absolute inset-0 bg-black/20" /> {/* Overlay plus léger */}
       </div>
 
       {/* Content */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}
         className="relative z-10 max-w-4xl mx-auto px-6 flex flex-col items-center md:items-start text-center md:text-left"
       >
-        <div className="bg-[rgba(0,0,0,0.4)] backdrop-blur-sm p-8 md:p-16 rounded-[32px] border border-white/10 shadow-2xl">
-          <h1 className="text-white text-5xl md:text-7xl font-['Segoe_UI:Black',sans-serif] font-black mb-6 tracking-tight">
-            DInnoV-IT
+        <div className="bg-[rgba(255,255,255,0.8)] backdrop-blur-sm p-8 md:p-16 rounded-[32px] border border-white/20 shadow-2xl">
+          <h1 className="text-[#8B4513] text-5xl md:text-7xl font-['Great_Vibes',cursive] font-normal mb-6 tracking-wide">
+            Vincent & Samia
           </h1>
-          <p className="text-white text-lg md:text-2xl font-['Segoe_UI:Regular',sans-serif] mb-8 leading-relaxed max-w-2xl">
-            Architecture Cloud, DevOps, Sécurité & Management de projets pour les entreprises innovantes
+          <p className="text-[#5D4037] text-lg md:text-2xl font-['Playfair_Display',serif] mb-8 leading-relaxed max-w-2xl">
+            Nous avons hâte de célébrer notre amour avec vous, le [date] à [lieu].
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={scrollToContact}
-              className="px-6 py-3 bg-black hover:bg-gray-900 text-white rounded-2xl text-lg font-['Segoe_UI:Regular',sans-serif] transition-colors border border-white/10"
+              className="px-6 py-3 bg-[#B87333] hover:bg-[#A0522D] text-white rounded-2xl text-lg font-['Playfair_Display',serif] transition-colors border border-white/20 shadow-[0_0_20px_rgba(184,115,51,0.3)]"
             >
-              Travaillons ensemble
+              Infos pratiques
             </motion.button>
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-6 py-3 bg-[#14b8a6] hover:bg-[#0d9488] text-black font-bold rounded-2xl text-lg font-['Segoe_UI:Bold',sans-serif] transition-colors shadow-[0_0_20px_rgba(20,184,166,0.3)]"
+              className="px-6 py-3 bg-[#E6B8B7] hover:bg-[#D8A499] text-[#5D4037] font-bold rounded-2xl text-lg font-['Playfair_Display',serif] transition-colors shadow-[0_0_20px_rgba(230,184,183,0.3)]"
             >
-              Télécharger mon CV
+              Confirmer votre présence
             </motion.button>
           </div>
         </div>
